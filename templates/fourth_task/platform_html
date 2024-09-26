@@ -1,27 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Главная страница</title>
-</head>
-<body>
-    <h1>
-        <p align="center">
-        Главная страница игрового магазина
-        </p>
-    </h1>
-    <hr>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-            <h3><a href="/"> Главная страница </a></h3>
-        </li>
-        <li class="list-group-item">
-            <h3><a href="games/"> Магазин </a></h3>
-        </li>
-        <li class="list-group-item">
-            <h3><a href="cart/"> Корзина</a></h3>
-        </li>
-    </ul>
+{% extends "fourth_task/menu.html" %}
 
-</body>
-</html>
+{% block title %}{{ block.super }}{% endblock %}
+
+{% block pagename %}
+    {{ block.super }}
+{% endblock %}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<p align="center">Добро пожаловать в магазин видео игр</p>
+<hr>
+{% endblock %}
